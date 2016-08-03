@@ -1,0 +1,38 @@
+package automationFramework.testScenarios;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Set;
+
+/**
+ * Created by jwiczkowski on 02.08.16.
+ */
+public class Spielwiese
+{
+
+
+    public static void main(String[] args) {
+
+        HashMap<String, String> Obstkörbchen = new HashMap<String, String>();
+         Obstkörbchen.put("Der verrückte Eisenvogel", "Apfel");
+         Obstkörbchen.put("Die Prima Ballerina", "Birne");
+         Obstkörbchen.put("Der Kurzbeinige Soldat", "Apfel");
+         Obstkörbchen.put("Das Möchtegern Model", "Birne");
+         Obstkörbchen.put("Die Französin", "Birne");
+
+
+
+        System.out.println("Ich bin ein Behälter namens Obstkörbchen und ich beinhalte die folgenden 5 Früchte");
+
+        Set<String> set = Obstkörbchen.keySet();
+        ArrayList<String> Obstliste = new ArrayList<String>();  // Merken falls ich es nochmal brauchen werde
+        Obstliste.addAll(set);                                   // Zeigt Alle strings ind der Hash map an ^^
+        Collections.sort(Obstliste);
+
+        for (String key : Obstliste) {
+            System.out.println(key + " : " + Obstkörbchen.get(key));
+        }
+
+    }
+
+}
