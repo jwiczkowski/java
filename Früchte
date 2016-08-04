@@ -1,0 +1,22 @@
+package Obstkorb;
+
+
+public class Früchte  {
+
+
+        public static void main(String[] args) {
+            Obst erstefrucht = new Obst("Der rote Baron", 6 , "rot" , 300, "Apfel");
+            Obst zweitefrucht = new Obst("Weiche Kartoffel", 8, "gelb", 500, "Birne");
+
+            int Obstanzahl = 2;
+
+
+            erstefrucht.Früchtedaten();
+            zweitefrucht.Früchtedaten();
+        }
+
+
+    }
+
+
+
