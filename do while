@@ -1,0 +1,34 @@
+package automationFramework.testScenarios;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Set;
+
+/**
+ * Created by jwiczkowski on 02.08.16.
+ */
+public class Spielwiese
+{
+
+
+    public static void main(String[] args) {
+
+      int zahl1 = 100;
+      int zahl2 = 1000;
+      
+              while (zahl1 < zahl2)
+              {
+                  zahl1++;
+
+              }
+              System.out.println(zahl1); // Somit printet die Konsole 1000 , weil zahl1 solange +1 geadded wird solange 
+                                         // es den wert von zahl 2 annimmt :)
+
+        int party = 100;
+           do{
+               System.out.println("die Partyboys sind am rocken!");
+               party--;
+            } while(party > 0);
+    }
+
+    }
