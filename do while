@@ -29,6 +29,6 @@ public class Spielwiese
                System.out.println("die Partyboys sind am rocken!");
                party--;
             } while(party > 0);
-    }
+    }                                             // bis party auf 0 gesunken ist wird jedesmal "die Partyboys sind am rocken!" geprintet
 
     }
